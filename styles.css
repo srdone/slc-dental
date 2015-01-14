@@ -46,6 +46,12 @@ body {
 
 .nav li {
   display: inline;
+  padding: 0 .3em;
+  color: #2679B7;
+}
+
+.nav ul:first-child {
+  color: #5ABEE4;
 }
 
 @media screen and (min-width:700px) {
