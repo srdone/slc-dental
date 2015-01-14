@@ -15,9 +15,12 @@ body {
 }
 
 .header {
-  height: 10px;
   width: 100%;
   padding: 1em 0;
+}
+
+.header.top {
+  height: 10px;
   background: #004E8E;
 }
 
@@ -27,16 +30,16 @@ body {
   height: 100%;
   background: #fff;
   box-shadow: .3em .3em .3em #000;
-  padding: 10px 3px;
+  padding: 2em .25em;
 }
 
 .logo {
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
 }
 
 .nav {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   display: none;
 }
 
@@ -50,11 +53,24 @@ body {
   color: #2679B7;
 }
 
-.nav ul:first-child {
+.nav li:first-child {
   color: #5ABEE4;
 }
 
-@media screen and (min-width:700px) {
+.jumbotron {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width:900px) {
+  .logo {
+    float: left;
+  }
+  
+  .nav ul {
+     float: left;
+  }
+  
   .nav {
     display: block;
   }
